@@ -1,4 +1,9 @@
 TwjqApp::Application.routes.draw do
+  
+  resources :users, :path => "/users"
+
+  match "search" => "search"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
